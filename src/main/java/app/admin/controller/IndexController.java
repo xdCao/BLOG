@@ -27,7 +27,7 @@ public class IndexController extends BaseController {
     @GetMapping(value = {"","/index"})
     public String index(HttpServletRequest request){
         LOGGER.info("----------进入管理员首页-----------");
-
+        return null;
     }
 
 }

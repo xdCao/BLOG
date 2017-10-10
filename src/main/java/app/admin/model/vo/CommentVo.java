@@ -1,28 +1,33 @@
-package app.common.model;
-/*
-    created by xdCao on 2017/10/10
-*/
+package app.admin.model.vo;
 
-import java.io.Serializable;
-
-public class CommentVo implements Serializable{
-
+public class CommentVo {
     private Integer coid;
-    private Integer cid;
-    private Integer created;
-    private String author;
-    private Integer authorId;
-    private Integer ownerId;
-    private String mail;
-    private String url;
-    private String ip;
-    private String agent;
-    private String type;
-    private String status;
-    private Integer parent;
-    private String content;
 
-    private static final long serialVersionUID=1l;
+    private Integer cid;
+
+    private Integer created;
+
+    private String author;
+
+    private Integer authorId;
+
+    private Integer ownerId;
+
+    private String mail;
+
+    private String url;
+
+    private String ip;
+
+    private String agent;
+
+    private String type;
+
+    private String status;
+
+    private Integer parent;
+
+    private String content;
 
     public Integer getCoid() {
         return coid;
@@ -53,7 +58,7 @@ public class CommentVo implements Serializable{
     }
 
     public void setAuthor(String author) {
-        this.author = author;
+        this.author = author == null ? null : author.trim();
     }
 
     public Integer getAuthorId() {
@@ -77,7 +82,7 @@ public class CommentVo implements Serializable{
     }
 
     public void setMail(String mail) {
-        this.mail = mail;
+        this.mail = mail == null ? null : mail.trim();
     }
 
     public String getUrl() {
@@ -85,7 +90,7 @@ public class CommentVo implements Serializable{
     }
 
     public void setUrl(String url) {
-        this.url = url;
+        this.url = url == null ? null : url.trim();
     }
 
     public String getIp() {
@@ -93,7 +98,7 @@ public class CommentVo implements Serializable{
     }
 
     public void setIp(String ip) {
-        this.ip = ip;
+        this.ip = ip == null ? null : ip.trim();
     }
 
     public String getAgent() {
@@ -101,7 +106,7 @@ public class CommentVo implements Serializable{
     }
 
     public void setAgent(String agent) {
-        this.agent = agent;
+        this.agent = agent == null ? null : agent.trim();
     }
 
     public String getType() {
@@ -109,7 +114,7 @@ public class CommentVo implements Serializable{
     }
 
     public void setType(String type) {
-        this.type = type;
+        this.type = type == null ? null : type.trim();
     }
 
     public String getStatus() {
@@ -117,7 +122,7 @@ public class CommentVo implements Serializable{
     }
 
     public void setStatus(String status) {
-        this.status = status;
+        this.status = status == null ? null : status.trim();
     }
 
     public Integer getParent() {
@@ -133,10 +138,6 @@ public class CommentVo implements Serializable{
     }
 
     public void setContent(String content) {
-        this.content = content;
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
+        this.content = content == null ? null : content.trim();
     }
 }

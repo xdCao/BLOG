@@ -3,8 +3,8 @@ package app.common.controller;
     created by xdCao on 2017/10/10
 */
 
+import app.admin.model.vo.UserVo;
 import app.common.CommonUtils;
-import app.common.model.UserVo;
 import app.common.cache.MapCache;
 
 import javax.servlet.http.HttpServletRequest;

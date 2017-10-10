@@ -1,32 +1,37 @@
-package app.common.model;
-/*
-    created by xdCao on 2017/10/10
-*/
+package app.admin.model.vo;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import java.io.Serializable;
-
-public class ContentVo implements Serializable {
-
+public class ContentVo {
     private Integer cid;
-    private String title;
-    private String slug;//内容缩略名
-    private Integer created;
-    private Integer modified;
-    private Integer authorId;
-    private String type;
-    private String status;
-    private String tags;//标签列表
-    private String categories;
-    private Integer hits;//点击次数
-    private Integer commentsNum;
-    private Boolean allowComment;
-    private Boolean allowPing;//是否允许ping
-    private Boolean allowFeed;//是否允许出现在集合中
-    private String content;
 
-    private static final long serialVersionUID = 1L;
+    private String title;
+
+    private String slug;
+
+    private Integer created;
+
+    private Integer modified;
+
+    private Integer authorId;
+
+    private String type;
+
+    private String status;
+
+    private String tags;
+
+    private String categories;
+
+    private Integer hits;
+
+    private Integer commentsNum;
+
+    private Boolean allowComment;
+
+    private Boolean allowPing;
+
+    private Boolean allowFeed;
+
+    private String content;
 
     public Integer getCid() {
         return cid;
@@ -41,7 +46,7 @@ public class ContentVo implements Serializable {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.title = title == null ? null : title.trim();
     }
 
     public String getSlug() {
@@ -49,7 +54,7 @@ public class ContentVo implements Serializable {
     }
 
     public void setSlug(String slug) {
-        this.slug = slug;
+        this.slug = slug == null ? null : slug.trim();
     }
 
     public Integer getCreated() {
@@ -81,7 +86,7 @@ public class ContentVo implements Serializable {
     }
 
     public void setType(String type) {
-        this.type = type;
+        this.type = type == null ? null : type.trim();
     }
 
     public String getStatus() {
@@ -89,7 +94,7 @@ public class ContentVo implements Serializable {
     }
 
     public void setStatus(String status) {
-        this.status = status;
+        this.status = status == null ? null : status.trim();
     }
 
     public String getTags() {
@@ -97,7 +102,7 @@ public class ContentVo implements Serializable {
     }
 
     public void setTags(String tags) {
-        this.tags = tags;
+        this.tags = tags == null ? null : tags.trim();
     }
 
     public String getCategories() {
@@ -105,7 +110,7 @@ public class ContentVo implements Serializable {
     }
 
     public void setCategories(String categories) {
-        this.categories = categories;
+        this.categories = categories == null ? null : categories.trim();
     }
 
     public Integer getHits() {
@@ -153,10 +158,6 @@ public class ContentVo implements Serializable {
     }
 
     public void setContent(String content) {
-        this.content = content;
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
+        this.content = content == null ? null : content.trim();
     }
 }

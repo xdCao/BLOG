@@ -3,7 +3,9 @@ package app.admin.model;
     created by xdCao on 2017/10/10
 */
 
-import app.common.model.ContentVo;
+
+
+import app.admin.model.vo.ContentVo;
 
 import java.io.Serializable;
 import java.util.List;

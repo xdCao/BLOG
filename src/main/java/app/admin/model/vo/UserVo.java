@@ -1,24 +1,25 @@
-package app.common.model;
-/*
-    created by xdCao on 2017/10/10
-*/
+package app.admin.model.vo;
 
-import java.io.Serializable;
-
-public class UserVo implements Serializable{
-
+public class UserVo {
     private Integer uid;
-    private String username;
-    private String password;
-    private String email;
-    private String homeUrl;
-    private String screenName;
-    private Integer created;
-    private Integer activated;
-    private Integer logged;
-    private String groupName;
 
-    private static final long serialVersionUID=1l;
+    private String username;
+
+    private String password;
+
+    private String email;
+
+    private String homeUrl;
+
+    private String screenName;
+
+    private Integer created;
+
+    private Integer activated;
+
+    private Integer logged;
+
+    private String groupName;
 
     public Integer getUid() {
         return uid;
@@ -33,7 +34,7 @@ public class UserVo implements Serializable{
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.username = username == null ? null : username.trim();
     }
 
     public String getPassword() {
@@ -41,7 +42,7 @@ public class UserVo implements Serializable{
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password == null ? null : password.trim();
     }
 
     public String getEmail() {
@@ -49,7 +50,7 @@ public class UserVo implements Serializable{
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.email = email == null ? null : email.trim();
     }
 
     public String getHomeUrl() {
@@ -57,7 +58,7 @@ public class UserVo implements Serializable{
     }
 
     public void setHomeUrl(String homeUrl) {
-        this.homeUrl = homeUrl;
+        this.homeUrl = homeUrl == null ? null : homeUrl.trim();
     }
 
     public String getScreenName() {
@@ -65,7 +66,7 @@ public class UserVo implements Serializable{
     }
 
     public void setScreenName(String screenName) {
-        this.screenName = screenName;
+        this.screenName = screenName == null ? null : screenName.trim();
     }
 
     public Integer getCreated() {
@@ -97,10 +98,6 @@ public class UserVo implements Serializable{
     }
 
     public void setGroupName(String groupName) {
-        this.groupName = groupName;
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
+        this.groupName = groupName == null ? null : groupName.trim();
     }
 }

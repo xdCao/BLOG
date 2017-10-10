@@ -159,6 +159,26 @@
               <groupId>org.springframework.boot</groupId>
               <artifactId>spring-boot-maven-plugin</artifactId>
           </plugin>
+
+
+
+          <plugin>
+              <groupId>org.mybatis.generator</groupId>
+              <artifactId>mybatis-generator-maven-plugin</artifactId>
+              <version>1.3.2</version>
+              <dependencies>
+                  <dependency>
+                      <groupId>mysql</groupId>
+                      <artifactId>mysql-connector-java</artifactId>
+                      <version>5.1.41</version>
+                  </dependency>
+              </dependencies>
+              <configuration>
+                  <overwrite>true</overwrite>
+              </configuration>
+          </plugin>
+
+
       </plugins>
     <finalName>BLOG</finalName>
   </build>

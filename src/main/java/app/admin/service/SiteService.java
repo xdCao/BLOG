@@ -4,8 +4,9 @@ import app.admin.model.ArchiveBo;
 import app.admin.model.BackResponseBo;
 import app.admin.model.MetaDto;
 import app.admin.model.StatisticsBo;
-import app.common.model.CommentVo;
-import app.common.model.ContentVo;
+import app.admin.model.vo.CommentVo;
+import app.admin.model.vo.ContentVo;
+
 
 import java.util.List;
 
