@@ -48,4 +48,6 @@ public class StatisticsBo implements Serializable{
     public String toString() {
         return "统计数据：{ "+"文章数： "+articles+" 评论数： "+comments+" 链接数： "+links+" attachs: "+attachs+"  }";
     }
+
+
 }

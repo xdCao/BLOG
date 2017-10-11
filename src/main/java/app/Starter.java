@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +21,7 @@ import java.io.IOException;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan({"app.admin.dao","app.normal.dao"})
+@MapperScan("app.admin.dao")
 public class Starter {
 
     public static void main(String[] args) {
@@ -36,7 +37,7 @@ public class Starter {
     }
 
 
-    //配置myBatis
+//    配置myBatis
     @Bean
     public SqlSessionFactory sqlSessionFactoryBean() throws Exception {
         PathMatchingResourcePatternResolver resolver=new PathMatchingResourcePatternResolver();

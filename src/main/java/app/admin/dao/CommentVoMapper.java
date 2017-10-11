@@ -3,8 +3,11 @@ package app.admin.dao;
 import app.admin.model.vo.CommentVo;
 import app.admin.model.vo.CommentVoExample;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
+
 
 @Component
 public interface CommentVoMapper {

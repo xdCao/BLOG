@@ -21,13 +21,14 @@ public class MapCache {
         return instance;
     }
 
-    public void initCachePool(){
-        cachePool=new ConcurrentHashMap<>(DEFAULT_CACHES);
+    public MapCache() {
+        this(DEFAULT_CACHES);
     }
 
-    public void initCachePool(int size){
-        cachePool=new ConcurrentHashMap<>(size);
+    public MapCache(int cacheCount) {
+        cachePool = new ConcurrentHashMap<>(cacheCount);
     }
+
 
     public <T> T get(String key){
         CacheObject cacheObject=cachePool.get(key);
