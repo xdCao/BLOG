@@ -91,8 +91,8 @@ public class ContentServiceImpl implements ContentService {
 
         String tags=contentVo.getTags();
         String category=contentVo.getCategories();
-        contentVoMapper.insert(contentVo);
-        Integer cid = contentVo.getCid();
+        int cid = contentVoMapper.insert(contentVo);
+
 
         metaService.saveMetas(cid,tags, Types.TAG.getType());
         metaService.saveMetas(cid,category,Types.CATEGORY.getType());

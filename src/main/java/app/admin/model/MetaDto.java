@@ -3,9 +3,11 @@ package app.admin.model;
     created by xdCao on 2017/10/10
 */
 
+import app.admin.model.vo.MetaVo;
+
 import java.io.Serializable;
 
-public class MetaDto implements Serializable {
+public class MetaDto extends MetaVo {
 
     private int count;
 

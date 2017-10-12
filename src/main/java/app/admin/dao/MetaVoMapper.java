@@ -1,8 +1,10 @@
 package app.admin.dao;
 
+import app.admin.model.MetaDto;
 import app.admin.model.vo.MetaVo;
 import app.admin.model.vo.MetaVoExample;
 import java.util.List;
+import java.util.Map;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
@@ -31,4 +33,8 @@ public interface MetaVoMapper {
     int updateByPrimaryKey(MetaVo record);
 
     int countWithSql(Integer mid);
+
+    MetaDto selectDtoByNameAndType(String name, String type);
+
+    List<MetaDto> selectFromSql(Map<String, Object> paraMap);
 }
