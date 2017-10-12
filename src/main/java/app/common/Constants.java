@@ -8,6 +8,8 @@ import java.util.Map;
 
 public class Constants {
 
+    public static final int MAX_TITLE_COUNT = 22;
+    public static final int MAX_TEXT_COUNT = 1000;
     public static Map<String, String> initConfig = new HashMap<>();
 
     public static final int MAX_POSTS = 9999;

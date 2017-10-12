@@ -29,4 +29,6 @@ public interface MetaVoMapper {
     int updateByPrimaryKeySelective(MetaVo record);
 
     int updateByPrimaryKey(MetaVo record);
+
+    int countWithSql(Integer mid);
 }

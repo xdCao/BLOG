@@ -240,4 +240,12 @@
       parent = #{parent,jdbcType=INTEGER}
     where mid = #{mid,jdbcType=INTEGER}
   </update>
+
+  <!--自定义查询-->
+
+  <select id="countWithSql" parameterType="Integer" resultType="Integer">
+    SELECT COUNT(0) FROM t_contents a LEFT JOIN t_relationships b ON a.cid=b.cid WHERE b.mid=#{value} AND a.status='publish' AND a.type='post';
+  </select>
+
+
 </mapper>

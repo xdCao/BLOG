@@ -109,6 +109,8 @@ public class ProfileController extends BaseController {
                 LOGGER.error(msg,e);
             }
             return RestResponseBo.fail(msg);
+
+
        }
 
 

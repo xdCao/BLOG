@@ -444,4 +444,13 @@
       allow_feed = #{allowFeed,jdbcType=BIT}
     where cid = #{cid,jdbcType=INTEGER}
   </update>
+
+  <!--自定义sql-->
+
+  <select id="findByCatalog" parameterType="Integer" resultMap="BaseResultMap">
+     select a.* from t_contents a left join t_relationships b on a.cid = b.cid
+     where b.mid = #{value} and a.status = 'publish' and a.type = 'post'
+     order by a.created desc
+  </select>
+
 </mapper>

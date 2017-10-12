@@ -35,4 +35,6 @@ public interface ContentVoMapper {
     int updateByPrimaryKeyWithBLOBs(ContentVo record);
 
     int updateByPrimaryKey(ContentVo record);
+
+    List<ContentVo> findByCatalog(Integer mid);
 }
