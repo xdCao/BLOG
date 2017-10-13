@@ -180,8 +180,7 @@ public class MetaServiceImpl implements MetaService {
             metaVo.setSlug(name);
             metaVo.setName(name);
             metaVo.setType(type);
-            metaVoMapper.insertSelective(metaVo);
-            mid=metaVo.getMid();
+            mid=metaVoMapper.insertSelective(metaVo);
         }
         if (mid!=0){
             int count = relationshipService.countById(cid, mid);
