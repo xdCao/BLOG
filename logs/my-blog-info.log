@@ -1,0 +1,67 @@
+2017-10-15 18:07:04.033 [http-nio-8080-exec-5] INFO  app.admin.controller.IndexController - ----------进入管理员首页-----------
+2017-10-15 18:07:04.033 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近评论----------
+2017-10-15 18:07:04.074 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近评论成功----------
+2017-10-15 18:07:04.074 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近内容----------
+2017-10-15 18:07:04.090 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近内容成功----------
+2017-10-15 18:07:04.090 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.SiteServiceImpl - ---------获取后台统计数据--------
+2017-10-15 18:07:04.103 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.SiteServiceImpl - ----------返回后台统计数据---------
+2017-10-15 18:07:04.103 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.LogServiceImpl - ----------获取日志： 页数=1，行数=5---------
+2017-10-15 18:07:04.108 [http-nio-8080-exec-5] DEBUG app.admin.service.impl.LogServiceImpl - ----------返回日志----------
+2017-10-15 18:07:04.108 [http-nio-8080-exec-5] INFO  app.admin.controller.IndexController - ---------返回管理员首页页面----------
+2017-10-15 18:08:17.635 [http-nio-8080-exec-8] INFO  app.admin.controller.AttachController - 用户admin上传文件
+2017-10-15 18:08:17.689 [http-nio-8080-exec-8] INFO  app.admin.controller.AttachController - 文件：[RS]生活大爆炸.The.Big.Bang.Theory.S11E03.中英字幕.HDTVrip.720P-人人影视.mp4.torrent上传成功
+2017-10-15 18:09:19.031 [http-nio-8080-exec-2] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-15 18:09:19.049 [http-nio-8080-exec-2] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-15 18:09:19.057 [http-nio-8080-exec-2] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-15 18:09:24.302 [http-nio-8080-exec-3] DEBUG app.admin.dao.UserVoMapper.countByExample - ==>  Preparing: select count(*) from t_users WHERE ( username = ? ) 
+2017-10-15 18:09:24.302 [http-nio-8080-exec-3] DEBUG app.admin.dao.UserVoMapper.countByExample - ==> Parameters: admin(String)
+2017-10-15 18:09:24.303 [http-nio-8080-exec-3] DEBUG app.admin.dao.UserVoMapper.countByExample - <==      Total: 1
+2017-10-15 18:09:24.305 [http-nio-8080-exec-3] DEBUG app.admin.dao.UserVoMapper.selectByExample - ==>  Preparing: select uid, username, password, email, home_url, screen_name, created, activated, logged, group_name from t_users WHERE ( username = ? and password = ? ) 
+2017-10-15 18:09:24.305 [http-nio-8080-exec-3] DEBUG app.admin.dao.UserVoMapper.selectByExample - ==> Parameters: admin(String), caf8925a36326480a89e17fb2f06c97d(String)
+2017-10-15 18:09:24.306 [http-nio-8080-exec-3] DEBUG app.admin.dao.UserVoMapper.selectByExample - <==      Total: 1
+2017-10-15 18:09:24.309 [http-nio-8080-exec-3] DEBUG app.admin.dao.LogVoMapper.insert - ==>  Preparing: insert into t_logs (id, action, data, author_id, ip, created ) values (?, ?, ?, ?, ?, ? ) 
+2017-10-15 18:09:24.310 [http-nio-8080-exec-3] DEBUG app.admin.dao.LogVoMapper.insert - ==> Parameters: null, 登录后台(String), null, 1(Integer), 0:0:0:0:0:0:0:1(String), 1508062164(Integer)
+2017-10-15 18:09:24.316 [http-nio-8080-exec-3] DEBUG app.admin.dao.LogVoMapper.insert - <==    Updates: 1
+2017-10-15 18:09:24.355 [http-nio-8080-exec-3] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-15 18:09:24.356 [http-nio-8080-exec-3] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-15 18:09:24.357 [http-nio-8080-exec-3] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-15 18:09:24.369 [http-nio-8080-exec-4] INFO  app.admin.controller.IndexController - ----------进入管理员首页-----------
+2017-10-15 18:09:24.369 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近评论----------
+2017-10-15 18:09:24.390 [http-nio-8080-exec-4] DEBUG app.admin.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments 
+2017-10-15 18:09:24.390 [http-nio-8080-exec-4] DEBUG app.admin.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 
+2017-10-15 18:09:24.391 [http-nio-8080-exec-4] DEBUG app.admin.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2017-10-15 18:09:24.392 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近评论成功----------
+2017-10-15 18:09:24.392 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近内容----------
+2017-10-15 18:09:24.400 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (status = ? AND type = ?) 
+2017-10-15 18:09:24.401 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.selectByExample_COUNT - ==> Parameters: publish(String), post(String)
+2017-10-15 18:09:24.403 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.selectByExample_COUNT - <==      Total: 1
+2017-10-15 18:09:24.404 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.selectByExample - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed from t_contents WHERE ( status = ? and type = ? ) order by created desc LIMIT 5 
+2017-10-15 18:09:24.404 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.selectByExample - ==> Parameters: publish(String), post(String)
+2017-10-15 18:09:24.406 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.selectByExample - <==      Total: 2
+2017-10-15 18:09:24.406 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.SiteServiceImpl - ----------取出最近内容成功----------
+2017-10-15 18:09:24.406 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.SiteServiceImpl - ---------获取后台统计数据--------
+2017-10-15 18:09:24.407 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.countByExample - ==>  Preparing: select count(*) from t_contents WHERE ( type = ? and status = ? ) 
+2017-10-15 18:09:24.407 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.countByExample - ==> Parameters: post(String), publish(String)
+2017-10-15 18:09:24.408 [http-nio-8080-exec-4] DEBUG app.admin.dao.ContentVoMapper.countByExample - <==      Total: 1
+2017-10-15 18:09:24.409 [http-nio-8080-exec-4] DEBUG app.admin.dao.CommentVoMapper.countByExample - ==>  Preparing: select count(*) from t_comments 
+2017-10-15 18:09:24.410 [http-nio-8080-exec-4] DEBUG app.admin.dao.CommentVoMapper.countByExample - ==> Parameters: 
+2017-10-15 18:09:24.410 [http-nio-8080-exec-4] DEBUG app.admin.dao.CommentVoMapper.countByExample - <==      Total: 1
+2017-10-15 18:09:24.412 [http-nio-8080-exec-4] DEBUG app.admin.dao.AttachVoMapper.countByExample - ==>  Preparing: select count(*) from t_attach 
+2017-10-15 18:09:24.413 [http-nio-8080-exec-4] DEBUG app.admin.dao.AttachVoMapper.countByExample - ==> Parameters: 
+2017-10-15 18:09:24.413 [http-nio-8080-exec-4] DEBUG app.admin.dao.AttachVoMapper.countByExample - <==      Total: 1
+2017-10-15 18:09:24.417 [http-nio-8080-exec-4] DEBUG app.admin.dao.MetaVoMapper.countByExample - ==>  Preparing: select count(*) from t_metas WHERE ( type = ? ) 
+2017-10-15 18:09:24.417 [http-nio-8080-exec-4] DEBUG app.admin.dao.MetaVoMapper.countByExample - ==> Parameters: link(String)
+2017-10-15 18:09:24.418 [http-nio-8080-exec-4] DEBUG app.admin.dao.MetaVoMapper.countByExample - <==      Total: 1
+2017-10-15 18:09:24.419 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.SiteServiceImpl - ----------返回后台统计数据---------
+2017-10-15 18:09:24.419 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.LogServiceImpl - ----------获取日志： 页数=1，行数=5---------
+2017-10-15 18:09:24.422 [http-nio-8080-exec-4] DEBUG app.admin.dao.LogVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_logs 
+2017-10-15 18:09:24.423 [http-nio-8080-exec-4] DEBUG app.admin.dao.LogVoMapper.selectByExample_COUNT - ==> Parameters: 
+2017-10-15 18:09:24.423 [http-nio-8080-exec-4] DEBUG app.admin.dao.LogVoMapper.selectByExample_COUNT - <==      Total: 1
+2017-10-15 18:09:24.423 [http-nio-8080-exec-4] DEBUG app.admin.dao.LogVoMapper.selectByExample - ==>  Preparing: select id, action, data, author_id, ip, created from t_logs order by id desc LIMIT 5 
+2017-10-15 18:09:24.424 [http-nio-8080-exec-4] DEBUG app.admin.dao.LogVoMapper.selectByExample - ==> Parameters: 
+2017-10-15 18:09:24.425 [http-nio-8080-exec-4] DEBUG app.admin.dao.LogVoMapper.selectByExample - <==      Total: 5
+2017-10-15 18:09:24.425 [http-nio-8080-exec-4] DEBUG app.admin.service.impl.LogServiceImpl - ----------返回日志----------
+2017-10-15 18:09:24.425 [http-nio-8080-exec-4] INFO  app.admin.controller.IndexController - ---------返回管理员首页页面----------
+2017-10-15 18:09:24.426 [http-nio-8080-exec-4] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-15 18:09:24.426 [http-nio-8080-exec-4] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-15 18:09:24.427 [http-nio-8080-exec-4] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1

@@ -1,5 +1,6 @@
 package app.admin.dao;
 
+import app.admin.model.ArchiveBo;
 import app.admin.model.vo.ContentVo;
 import app.admin.model.vo.ContentVoExample;
 import java.util.List;
@@ -37,4 +38,6 @@ public interface ContentVoMapper {
     int updateByPrimaryKey(ContentVo record);
 
     List<ContentVo> findByCatalog(Integer mid);
+
+    List<ArchiveBo> findReturnArchiveBo();
 }

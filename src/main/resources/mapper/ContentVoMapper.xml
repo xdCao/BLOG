@@ -453,4 +453,8 @@
      order by a.created desc
   </select>
 
+  <select id="findReturnArchiveBo" resultMap="BaseResultMap" parameterType="Integer">
+    select FROM_UNIXTIME(created, '%Y年%m月') as date, count(*) as count from t_contents where type = 'post' and status = 'publish' group by date order by date desc;
+  </select>
+
 </mapper>

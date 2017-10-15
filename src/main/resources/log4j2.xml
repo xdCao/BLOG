@@ -46,16 +46,16 @@
         <logger name="org.apache" level="WARN"/>
 
         <!-- 对包进行更详细的配置 -->
-        <!-- additivity表示是否追加,防止重复,因为root已经接收过一次了 -->
-        <!--<logger name="com.my.blog.website.dao" level="DEBUG" additivity="true">-->
-            <!--<appender-ref ref="db_log"/>-->
-        <!--</logger>-->
-        <!--<logger name="com.my.blog.website.controller" level="DEBUG" additivity="false">-->
-            <!--<appender-ref ref="service_log"/>-->
-        <!--</logger>-->
-        <!--<logger name="com.my.blog.website.service" level="DEBUG" additivity="false">-->
-            <!--<appender-ref ref="service_log"/>-->
-        <!--</logger>-->
+         additivity表示是否追加,防止重复,因为root已经接收过一次了
+        <logger name="app.admin.dao" level="DEBUG" additivity="true">
+            <appender-ref ref="service_log"/>
+        </logger>
+        <logger name="app.admin.controller" level="DEBUG" additivity="false">
+            <appender-ref ref="service_log"/>
+        </logger>
+        <logger name="app.admin.service" level="DEBUG" additivity="false">
+            <appender-ref ref="service_log"/>
+        </logger>
         <!-- root logger,一般用于放置所有的appender -->
         <root level="DEBUG">
             <appender-ref ref="db_log"/>

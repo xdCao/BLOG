@@ -412,7 +412,7 @@ public class TaleUtils {
      *
      * @return
      */
-    public static String getUplodFilePath() {
+    public static String getUploadFilePath() {
         String path = TaleUtils.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         path = path.substring(1, path.length());
         try {
