@@ -1,8 +1,8 @@
 package app.admin.controller;
 
-import app.admin.model.BackResponseBo;
-import app.admin.model.LogActions;
-import app.admin.model.RestResponseBo;
+import app.admin.model.others.BackResponseBo;
+import app.admin.model.others.LogActions;
+import app.admin.model.others.RestResponseBo;
 import app.admin.model.vo.OptionVo;
 import app.admin.service.LogService;
 import app.admin.service.OptionService;
@@ -24,12 +24,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-
 /*
     created by xdCao on 2017/10/14
 */
-@Controller
+@Controller("adminSettingController")
 @RequestMapping(value = "/admin/setting")
 public class SettingController extends BaseController{
 

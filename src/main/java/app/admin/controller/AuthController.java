@@ -3,8 +3,8 @@ package app.admin.controller;
     created by xdCao on 2017/10/11
 */
 
-import app.admin.model.LogActions;
-import app.admin.model.RestResponseBo;
+import app.admin.model.others.LogActions;
+import app.admin.model.others.RestResponseBo;
 import app.admin.model.vo.UserVo;
 import app.admin.service.LogService;
 import app.admin.service.UserService;
@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@Controller
+@Controller("adminAuthController")
 @RequestMapping(value = "admin")
 public class AuthController extends BaseController {
 

@@ -1,6 +1,6 @@
 package app.admin.dao;
 
-import app.admin.model.ArchiveBo;
+import app.admin.model.others.ArchiveBo;
 import app.admin.model.vo.ContentVo;
 import app.admin.model.vo.ContentVoExample;
 import java.util.List;

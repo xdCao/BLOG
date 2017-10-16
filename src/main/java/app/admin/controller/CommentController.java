@@ -3,7 +3,7 @@ package app.admin.controller;
     created by xdCao on 2017/10/15
 */
 
-import app.admin.model.RestResponseBo;
+import app.admin.model.others.RestResponseBo;
 import app.admin.model.vo.CommentVo;
 import app.admin.model.vo.CommentVoExample;
 import app.admin.model.vo.UserVo;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
-@Controller
+@Controller("adminCommentController")
 @RequestMapping(value = "/admin/comments")
 public class CommentController extends BaseController {
 

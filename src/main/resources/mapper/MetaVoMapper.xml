@@ -243,7 +243,7 @@
 
   <!--自定义查询-->
 
-  <resultMap id="MetaDto" type="app.admin.model.MetaDto" extends="BaseResultMap">
+  <resultMap id="MetaDto" type="app.admin.model.others.MetaDto" extends="BaseResultMap">
     <result column="count" property="count" jdbcType="INTEGER"/>
   </resultMap>
 

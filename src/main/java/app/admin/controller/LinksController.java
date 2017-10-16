@@ -3,8 +3,8 @@ package app.admin.controller;
     created by xdCao on 2017/10/15
 */
 
-import app.admin.model.RestResponseBo;
-import app.admin.model.Types;
+import app.admin.model.others.RestResponseBo;
+import app.admin.model.others.Types;
 import app.admin.model.vo.MetaVo;
 import app.admin.service.MetaService;
 import app.common.controller.BaseController;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-@Controller
+@Controller("adminLinksController")
 @RequestMapping("/admin/links")
 public class LinksController extends BaseController {
 

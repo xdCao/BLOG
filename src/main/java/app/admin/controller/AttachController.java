@@ -4,9 +4,9 @@ package app.admin.controller;
     created by xdCao on 2017/10/11
 */
 
-import app.admin.model.LogActions;
-import app.admin.model.RestResponseBo;
-import app.admin.model.Types;
+import app.admin.model.others.LogActions;
+import app.admin.model.others.RestResponseBo;
+import app.admin.model.others.Types;
 import app.admin.model.vo.AttachVo;
 import app.admin.model.vo.UserVo;
 import app.admin.service.AttachService;
@@ -32,7 +32,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
+@Controller("adminAttachController")
 @RequestMapping(value = "/admin/attach")
 public class AttachController extends BaseController{
 

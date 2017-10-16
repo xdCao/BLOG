@@ -12,6 +12,8 @@ public class Constants {
     public static final int MAX_TEXT_COUNT = 200000;//文章最大长度
     public static final int MAX_FILE_SIZE = 1048576;//附件最大为1MB
     public static final String SUCCESS_RESULT = "SUCCESS";
+    public static final Integer MAX_PAGE = 100;
+    public static final Integer HIT_EXCEED = 10;
     public static Map<String, String> initConfig = new HashMap<>();
 
     public static final int MAX_POSTS = 9999;//最大获取文章数目

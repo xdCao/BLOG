@@ -3,7 +3,7 @@ package app.admin.service;
     created by xdCao on 2017/10/15
 */
 
-import app.admin.model.CommentBo;
+import app.admin.model.others.CommentBo;
 import app.admin.model.vo.CommentVo;
 import app.admin.model.vo.CommentVoExample;
 import com.github.pagehelper.PageInfo;

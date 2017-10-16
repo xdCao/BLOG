@@ -3,13 +3,12 @@ package app.admin.controller;
     created by xdCao on 2017/10/10
 */
 
-import app.admin.model.StatisticsBo;
+import app.admin.model.others.StatisticsBo;
 import app.admin.model.vo.CommentVo;
 import app.admin.model.vo.ContentVo;
 import app.admin.model.vo.LogVo;
 import app.admin.service.LogService;
 import app.admin.service.SiteService;
-import app.admin.service.impl.SiteServiceImpl;
 import app.common.controller.BaseController;
 
 import org.slf4j.Logger;
@@ -23,7 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 
-@Controller
+@Controller("adminIndexController")
 @RequestMapping("admin")
 public class IndexController extends BaseController {
 

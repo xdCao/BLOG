@@ -57,6 +57,10 @@ public class MapCache {
         cachePool.put(key,cacheObject);
     }
 
+    public void hashSet(String key,String field,Object value){
+        this.hashSet(key, field, value,-1);
+    }
+
     public void hashSet(String key,String field,Object value,long expired){
         key=key+":"+field;
         this.set(key,value,expired);

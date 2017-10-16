@@ -1,6 +1,6 @@
 package app.admin.dao;
 
-import app.admin.model.MetaDto;
+import app.admin.model.others.MetaDto;
 import app.admin.model.vo.MetaVo;
 import app.admin.model.vo.MetaVoExample;
 import java.util.List;

@@ -3,8 +3,8 @@ package app.admin.controller;
     created by xdCao on 2017/10/11
 */
 
-import app.admin.model.LogActions;
-import app.admin.model.RestResponseBo;
+import app.admin.model.others.LogActions;
+import app.admin.model.others.RestResponseBo;
 import app.admin.model.vo.UserVo;
 import app.admin.service.LogService;
 import app.admin.service.UserService;
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-@Controller
+@Controller("adminProfileController")
 @RequestMapping(value = "/admin")
 public class ProfileController extends BaseController {
 

@@ -1,8 +1,8 @@
 package app.common.utils;
 
 
-import app.admin.model.MetaDto;
-import app.admin.model.Types;
+import app.admin.model.others.MetaDto;
+import app.admin.model.others.Types;
 import app.admin.model.vo.CommentVo;
 import app.admin.model.vo.ContentVo;
 import app.admin.service.SiteService;

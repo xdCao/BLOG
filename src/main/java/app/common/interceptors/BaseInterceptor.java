@@ -4,7 +4,7 @@ package app.common.interceptors;
 */
 
 import app.admin.AdminCommons;
-import app.admin.model.Types;
+import app.admin.model.others.Types;
 import app.admin.model.vo.OptionVo;
 import app.admin.model.vo.UserVo;
 import app.admin.service.OptionService;

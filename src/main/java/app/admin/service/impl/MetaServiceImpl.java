@@ -4,8 +4,8 @@ package app.admin.service.impl;
 */
 
 import app.admin.dao.MetaVoMapper;
-import app.admin.model.MetaDto;
-import app.admin.model.Types;
+import app.admin.model.others.MetaDto;
+import app.admin.model.others.Types;
 import app.admin.model.vo.ContentVo;
 import app.admin.model.vo.MetaVo;
 import app.admin.model.vo.MetaVoExample;

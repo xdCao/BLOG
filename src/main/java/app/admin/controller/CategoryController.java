@@ -3,9 +3,9 @@ package app.admin.controller;
     created by xdCao on 2017/10/15
 */
 
-import app.admin.model.MetaDto;
-import app.admin.model.RestResponseBo;
-import app.admin.model.Types;
+import app.admin.model.others.MetaDto;
+import app.admin.model.others.RestResponseBo;
+import app.admin.model.others.Types;
 import app.admin.service.MetaService;
 import app.common.constant.Constants;
 import app.common.controller.BaseController;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-@Controller
+@Controller("adminCategoryController")
 @RequestMapping(value = "/admin/category")
 public class CategoryController extends BaseController {
 

@@ -1,9 +1,9 @@
 package app.admin.service;
 
-import app.admin.model.ArchiveBo;
-import app.admin.model.BackResponseBo;
-import app.admin.model.MetaDto;
-import app.admin.model.StatisticsBo;
+import app.admin.model.others.ArchiveBo;
+import app.admin.model.others.BackResponseBo;
+import app.admin.model.others.MetaDto;
+import app.admin.model.others.StatisticsBo;
 import app.admin.model.vo.CommentVo;
 import app.admin.model.vo.ContentVo;
 

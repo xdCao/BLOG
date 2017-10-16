@@ -4,7 +4,7 @@ package app.admin.service.impl;
 */
 
 import app.admin.dao.CommentVoMapper;
-import app.admin.model.CommentBo;
+import app.admin.model.others.CommentBo;
 import app.admin.model.vo.CommentVo;
 import app.admin.model.vo.CommentVoExample;
 import app.admin.model.vo.ContentVo;

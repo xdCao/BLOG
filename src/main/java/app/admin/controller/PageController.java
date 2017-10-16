@@ -3,9 +3,9 @@ package app.admin.controller;
     created by xdCao on 2017/10/12
 */
 
-import app.admin.model.LogActions;
-import app.admin.model.RestResponseBo;
-import app.admin.model.Types;
+import app.admin.model.others.LogActions;
+import app.admin.model.others.RestResponseBo;
+import app.admin.model.others.Types;
 import app.admin.model.vo.ContentVo;
 import app.admin.model.vo.ContentVoExample;
 import app.admin.model.vo.UserVo;
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
-@Controller
+@Controller("adminPageController")
 @RequestMapping("/admin/page")
 public class PageController extends BaseController{
 

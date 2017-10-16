@@ -5,7 +5,7 @@ package app.admin.service.impl;
 
 import app.admin.dao.ContentVoMapper;
 import app.admin.dao.MetaVoMapper;
-import app.admin.model.Types;
+import app.admin.model.others.Types;
 import app.admin.model.vo.ContentVo;
 import app.admin.model.vo.ContentVoExample;
 import app.admin.service.ContentService;
