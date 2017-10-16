@@ -3,7 +3,7 @@ package app.admin;
 
 
 import app.admin.model.vo.MetaVo;
-import app.common.Tools;
+import app.common.utils.Tools;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 

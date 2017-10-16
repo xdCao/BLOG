@@ -7,7 +7,7 @@ import app.admin.model.MetaDto;
 import app.admin.model.RestResponseBo;
 import app.admin.model.Types;
 import app.admin.service.MetaService;
-import app.common.Constants;
+import app.common.constant.Constants;
 import app.common.controller.BaseController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

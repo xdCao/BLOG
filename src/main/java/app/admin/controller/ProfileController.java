@@ -8,10 +8,10 @@ import app.admin.model.RestResponseBo;
 import app.admin.model.vo.UserVo;
 import app.admin.service.LogService;
 import app.admin.service.UserService;
-import app.common.Constants;
-import app.common.GsonUtils;
-import app.common.TaleUtils;
-import app.common.TipException;
+import app.common.constant.Constants;
+import app.common.utils.GsonUtils;
+import app.common.utils.TaleUtils;
+import app.common.exceptions.TipException;
 import app.common.controller.BaseController;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -22,9 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.swing.*;
 
 @Controller
 @RequestMapping(value = "/admin")

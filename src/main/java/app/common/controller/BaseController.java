@@ -4,7 +4,7 @@ package app.common.controller;
 */
 
 import app.admin.model.vo.UserVo;
-import app.common.CommonUtils;
+import app.common.utils.CommonUtils;
 import app.common.cache.MapCache;
 
 import javax.servlet.http.HttpServletRequest;
