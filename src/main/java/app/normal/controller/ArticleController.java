@@ -79,13 +79,14 @@ public class ArticleController extends BaseController {
         }
     }
 
+
     /**
      * 更新文章的点击率
      *
      * @param cid
      * @param chits
      */
-    private void updateArticleHit(Integer cid, Integer chits) {
+    protected void updateArticleHit(Integer cid, Integer chits) {
         Integer hits = cache.hashGet("article", "hits");
         if (chits == null) {
             chits = 0;

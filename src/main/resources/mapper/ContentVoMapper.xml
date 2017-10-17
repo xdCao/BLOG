@@ -446,6 +446,11 @@
   </update>
 
   <!--自定义sql-->
+  <resultMap id="archiveBoMap" type="app.admin.model.others.ArchiveBo">
+    <id column="date" property="date"/>
+    <result column="count" property="count"/>
+  </resultMap>
+
 
   <select id="findByCatalog" parameterType="Integer" resultMap="BaseResultMap">
      select a.* from t_contents a left join t_relationships b on a.cid = b.cid
@@ -453,7 +458,7 @@
      order by a.created desc
   </select>
 
-  <select id="findReturnArchiveBo" resultMap="BaseResultMap" parameterType="Integer">
+  <select id="findReturnArchiveBo" resultMap="archiveBoMap" parameterType="Integer">
     select FROM_UNIXTIME(created, '%Y年%m月') as date, count(*) as count from t_contents where type = 'post' and status = 'publish' group by date order by date desc;
   </select>
 

@@ -3,8 +3,11 @@ package app.normal.controller;
     created by xdCao on 2017/10/16
 */
 
+import app.admin.model.others.ArchiveBo;
 import app.admin.model.others.CommentBo;
+import app.admin.model.others.Types;
 import app.admin.model.vo.ContentVo;
+import app.admin.model.vo.MetaVo;
 import app.admin.service.CommentService;
 import app.admin.service.ContentService;
 import app.admin.service.MetaService;
@@ -24,6 +27,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 public class IndexController extends BaseController{
@@ -52,6 +56,9 @@ public class IndexController extends BaseController{
         }
         return this.render("index");
     }
+
+
+
 
 
 

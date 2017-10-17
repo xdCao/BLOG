@@ -197,6 +197,8 @@ public class SiteServiceImpl implements SiteService {
                 ContentVoExample example = new ContentVoExample();
                 ContentVoExample.Criteria criteria = example.createCriteria().andTypeEqualTo(Types.ARTICLE.getType()).andStatusEqualTo(Types.PUBLISH.getType());
                 example.setOrderByClause("created desc");
+//                LOGGER.debug("-----------------------------------------------------------------------------------------------------------------------"+
+//                        (archive==null)+"-----------------------------------------------------------------------------------------------");
                 String date = archive.getDate();
                 Date sd = DateKit.dateFormat(date, "yyyy年MM月");
                 int start = DateKit.getUnixTimeByDate(sd);
