@@ -1086,3 +1086,61 @@
 2017-10-17 22:37:29.225 [http-nio-8080-exec-8] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
 2017-10-17 22:37:29.227 [http-nio-8080-exec-8] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
 2017-10-17 22:37:29.229 [http-nio-8080-exec-8] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-24 11:54:39.633 [http-nio-8080-exec-2] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-24 11:54:39.647 [http-nio-8080-exec-2] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-24 11:54:39.678 [http-nio-8080-exec-2] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-24 13:10:50.774 [https-jsse-nio-8443-exec-1] DEBUG app.admin.service.impl.ContentServiceImpl - 获取最近文章
+2017-10-24 13:10:50.840 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2017-10-24 13:10:50.856 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2017-10-24 13:10:50.875 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2017-10-24 13:10:50.876 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT 12 
+2017-10-24 13:10:50.876 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String)
+2017-10-24 13:10:50.887 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2017-10-24 13:10:50.888 [https-jsse-nio-8443-exec-1] DEBUG app.admin.service.impl.ContentServiceImpl - 返回最近文章列表
+2017-10-24 13:10:50.892 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-24 13:10:50.893 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-24 13:10:50.893 [https-jsse-nio-8443-exec-1] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-24 13:13:23.955 [https-jsse-nio-8443-exec-10] DEBUG app.admin.service.impl.ContentServiceImpl - 获取最近文章
+2017-10-24 13:13:24.026 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2017-10-24 13:13:24.042 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2017-10-24 13:13:24.052 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2017-10-24 13:13:24.053 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT 12 
+2017-10-24 13:13:24.053 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String)
+2017-10-24 13:13:24.058 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2017-10-24 13:13:24.058 [https-jsse-nio-8443-exec-10] DEBUG app.admin.service.impl.ContentServiceImpl - 返回最近文章列表
+2017-10-24 13:13:24.063 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-24 13:13:24.063 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-24 13:13:24.064 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-24 13:24:56.880 [https-jsse-nio-8443-exec-6] DEBUG app.admin.service.impl.ContentServiceImpl - 获取最近文章
+2017-10-24 13:24:57.009 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2017-10-24 13:24:57.024 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2017-10-24 13:24:57.033 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2017-10-24 13:24:57.034 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT 12 
+2017-10-24 13:24:57.034 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String)
+2017-10-24 13:24:57.039 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2017-10-24 13:24:57.040 [https-jsse-nio-8443-exec-6] DEBUG app.admin.service.impl.ContentServiceImpl - 返回最近文章列表
+2017-10-24 13:24:57.046 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-24 13:24:57.047 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-24 13:24:57.048 [https-jsse-nio-8443-exec-6] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-24 13:29:24.048 [https-jsse-nio-8443-exec-10] DEBUG app.admin.service.impl.ContentServiceImpl - 获取最近文章
+2017-10-24 13:29:24.055 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2017-10-24 13:29:24.055 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2017-10-24 13:29:24.056 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2017-10-24 13:29:24.056 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT 12 
+2017-10-24 13:29:24.057 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String)
+2017-10-24 13:29:24.058 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2017-10-24 13:29:24.058 [https-jsse-nio-8443-exec-10] DEBUG app.admin.service.impl.ContentServiceImpl - 返回最近文章列表
+2017-10-24 13:29:24.059 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-24 13:29:24.060 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-24 13:29:24.060 [https-jsse-nio-8443-exec-10] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2017-10-24 13:30:39.632 [https-jsse-nio-8443-exec-7] DEBUG app.admin.service.impl.ContentServiceImpl - 获取最近文章
+2017-10-24 13:30:39.635 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2017-10-24 13:30:39.635 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2017-10-24 13:30:39.636 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2017-10-24 13:30:39.636 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT 12 
+2017-10-24 13:30:39.636 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String)
+2017-10-24 13:30:39.640 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2017-10-24 13:30:39.640 [https-jsse-nio-8443-exec-7] DEBUG app.admin.service.impl.ContentServiceImpl - 返回最近文章列表
+2017-10-24 13:30:39.642 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2017-10-24 13:30:39.642 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2017-10-24 13:30:39.643 [https-jsse-nio-8443-exec-7] DEBUG app.admin.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
