@@ -30,9 +30,9 @@
 
     <!-- 接收appender -->
     <loggers>
-        <logger name="org.apache.http" level="warn"/>
+        <logger name="org.apache.http" level="INFO"/>
         <!-- Spring -->
-        <logger name="org.springframework" level="WARN"/>
+        <logger name="org.springframework" level="INFO"/>
         <!-- mybatis loggers -->
         <logger name="com.ibatis" level="DEBUG"/>
         <logger name="com.ibatis.app.common.jdbc.SimpleDataSource" level="DEBUG"/>
@@ -46,7 +46,7 @@
         <logger name="org.apache" level="WARN"/>
 
         <!-- 对包进行更详细的配置 -->
-         additivity表示是否追加,防止重复,因为root已经接收过一次了
+         <!--additivity表示是否追加,防止重复,因为root已经接收过一次了-->
         <logger name="app.admin.dao" level="DEBUG" additivity="true">
             <appender-ref ref="service_log"/>
         </logger>

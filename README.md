@@ -22,3 +22,31 @@ MapCache报空指针，单例的返回没有初始化缓存池
 10-16 
 
 对于之前的事务异常有新的想法，用统一的异常处理器ExceptionHandler处理
+
+10-24
+
+关于ssl配置的bug：
+
+在application.properties中的端口配置为server.port=8443，而在配置类中：
+
+       @Bean
+        public Connector httpConnector(){
+            Connector connector=new Connector("org.apache.coyote.http11.Http11NioProtocol");
+            connector.setScheme("http");
+            connector.setPort(8080);
+            connector.setSecure(false);
+            connector.setRedirectPort(8443);
+            return connector;
+        }
+
+mvn install -DskipTests
+
+mvn install -Dmaven.test.skip=true
+
+ps -ef|grep BLOG
+
+kill -9 pid
+
+nohup java -jar BLOG.jar
+
+ssl的部署仍然存在问题
