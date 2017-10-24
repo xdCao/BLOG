@@ -50,3 +50,5 @@ kill -9 pid
 nohup java -jar BLOG.jar
 
 ssl的部署仍然存在问题
+
+bug解决：是自己蠢，阿里云的8443端口忘开了..........Holy...
